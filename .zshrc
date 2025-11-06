@@ -105,6 +105,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -130,11 +133,11 @@ unset __conda_setup
 
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
-# ssh-agent for repos that need keys
+# ssh-agent for repos that need ssh keys
 eval `ssh-agent` > /dev/null 2>&1 &
 
 # ssh-keys so it's less annoying to work on this laptop
-ssh-add ~/.ssh/dugano > /dev/null 2>&1 &
+# ssh-add ~/.ssh/<key-name> > /dev/null 2>&1 &
 
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
