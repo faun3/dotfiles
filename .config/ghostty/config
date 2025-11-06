@@ -1,0 +1,10 @@
+theme = "Ultra Dark"
+
+font-family = "MonoLisa Nerd Font Mono"
+# 20pt or 40px
+font-size = "18"
+
+# taller lines
+adjust-cell-height = "40%"
+# makes the cursor as tall as the line
+adjust-cursor-height = "40%"
