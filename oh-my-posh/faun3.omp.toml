@@ -40,13 +40,7 @@ style = "folder"
 [[blocks.segments]]
 background = "transparent"
 foreground = "#2e9599"
-foreground_templates = [
-  "{{ if or (.Working.Changed) (.Staging.Changed) }}#f36943{{ end }}",
-  "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#a8216b{{ end }}",
-  "{{ if gt .Ahead 0 }}#35b5ff{{ end }}",
-  "{{ if gt .Behind 0 }}#f89cfa{{ end }}",
-]
-template = " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }} "
+template = "{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }} "
 style = "plain"
 type = "git"
 
@@ -56,10 +50,9 @@ fetch_status = true
 
 [[blocks.segments]]
 background = "transparent"
-background_templates = ["{{ if gt .Code 0 }}#e91e63{{ end }}"]
 foreground = "#ffffff"
 foreground_templates = ["{{ if gt .Code 0 }}#e91e63{{ end }}"]
-template = "λ "
+template = "\uf17c"
 style = "plain"
 type = "status"
 
