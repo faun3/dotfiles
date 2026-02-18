@@ -7,7 +7,7 @@ type = "rprompt"
 
 [[blocks.segments]]
 foreground = "#007ACC"
-template = " {{ .CurrentDate | date .Format }} "
+template = " {{ .CurrentDate | date .Format }}"
 style = "plain"
 type = "time"
 
@@ -30,7 +30,6 @@ display_default = false
 
 [[blocks.segments]]
 foreground = "#35b5ff"
-template = "{{ .Path }} "
 style = "plain"
 type = "path"
 
@@ -39,8 +38,7 @@ style = "folder"
 
 [[blocks.segments]]
 background = "transparent"
-foreground = "#2e9599"
-template = "{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }} "
+foreground = "#f14e32"
 style = "plain"
 type = "git"
 
