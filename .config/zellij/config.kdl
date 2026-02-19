@@ -233,7 +233,7 @@ plugins {
 load_plugins {
 }
 
-simplified_ui true
+simplified_ui false
 
 pane_frames false
 
