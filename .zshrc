@@ -32,3 +32,5 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init - zsh)"
 
 eval "$(oh-my-posh init --config $HOME/oh-my-posh/faun3.omp.toml zsh)"
+
+eval "$(zoxide init zsh)"
